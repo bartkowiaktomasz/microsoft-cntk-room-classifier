@@ -1,0 +1,5 @@
+bathroom 0
+bedroom 1
+kitchen 2
+living_room 3
+office 4
