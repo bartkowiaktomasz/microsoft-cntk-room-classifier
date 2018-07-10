@@ -1,6 +1,8 @@
 # Feed Forward Neural Network Room classifier for Object detection (Microsoft Image Recognition Challenge for Rooms)
 This repository contains a model developed to classify the list of objects (features) such as _toilet_, _table_ to one of five categories (room types): _Bathroom_, _Bedroom_, _Kitchen_, _Living Room_,  _Office_. This is a part of the object detection architecture developed as a group project at ICL. The high-level view of the architecture is presented below:
 
+## ![About the project on Microsoft developer blog](https://blogs.msdn.microsoft.com/uk_faculty_connection/2018/06/05/smart-acc-web-application-based-on-faster-rcnn-architecture-making-it-easier-to-find-accommodations-in-london/)
+
 ![Object detection architecture](images/Object-detection-architecture.jpg)
 
 The output from the Convolutional Neural Network contains names of regonised objects and their posistions (in JSON format) on the input image. The JSON response for the training set is then converted to two numpy arrays of size _NxM_ and _Nx1_, where _N_ is the number of training examples and _M_ is a number of objects (features), so the second array is, in effect, a label matrix.
